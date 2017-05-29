@@ -14,11 +14,9 @@
     <url>http://www.dominikdorn.com/facelets/</url>
 	
     <properties>
-  
+ 
         <spring-security-3-version>3.2.9.RELEASE</spring-security-3-version>
         <spring-3-version>3.0.3.RELEASE</spring-3-version>
-        <facelets-version>1.1.14</facelets-version>
-        <javax.faces.jsf-api-2.0-version>2.0.0.PR2</javax.faces.jsf-api-2.0-version>
       
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <github.global.server>github</github.global.server>
@@ -32,27 +30,21 @@
             <version>${spring-security-3-version}</version>
             <scope>provided</scope>
         </dependency>
-        
-        <dependency>  
-            <groupId>com.sun.facelets</groupId>
-            <artifactId>com.springsource.com.sun.facelets</artifactId>
-            <version>${facelets-version}</version>
-            <scope>provided</scope>
-        </dependency>
 		
         <dependency>
             <groupId>javax.el</groupId>
             <artifactId>javax.el-api</artifactId>
             <version>2.2.5</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
-            <groupId>javax.faces</groupId>
-            <artifactId>com.springsource.javax.faces</artifactId>
-            <version>${javax.faces.jsf-api-2.0-version}</version>
+            <groupId>com.sun.faces</groupId>
+            <artifactId>jsf-api</artifactId>
+            <version>2.2.0</version>
             <scope>provided</scope>
         </dependency>
-	
+
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
@@ -172,61 +164,5 @@
         </plugins>
     </build>
 	
-    <repositories>
-        
-        <repository>
-            <id>com.springsource.repository.bundles.release</id>
-            <name>SpringSource Enterprise Bundle Repository - SpringSource Bundle Releases</name>
-            <url>http://repository.springsource.com/maven/bundles/release</url>
-        </repository>
-        
-        <repository>
-            <id>com.springsource.repository.bundles.external</id>
-            <name>SpringSource Enterprise Bundle Repository - External Bundle Releases</name>
-            <url>http://repository.springsource.com/maven/bundles/external</url>
-        </repository>
-
-        <repository>
-            <id>com.springsource.repository.libraries.release</id>
-            <name>SpringSource Enterprise Bundle Repository - SpringSource Library Releases</name>
-            <url>http://repository.springsource.com/maven/libraries/release</url>
-        </repository>
-        
-        <repository>
-            <id>com.springsource.repository.libraries.external</id>
-            <name>SpringSource Enterprise Bundle Repository - External Library Releases</name>
-            <url>http://repository.springsource.com/maven/libraries/external</url>
-        </repository>
-		
-        <repository>
-            <id>jboss-public-repository-group</id>
-            <name>JBoss Public Maven Repository Group</name>
-            <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
-            <layout>default</layout>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
-            </snapshots>
-        </repository>
-		
-        <repository>
-            <id>jboss-deprecated-repository</id>
-            <name>JBoss Deprecated Maven Repository</name>
-            <url>https://repository.jboss.org/nexus/content/repositories/deprecated/</url>
-            <layout>default</layout>
-            <releases>
-                <enabled>true</enabled>
-                <updatePolicy>never</updatePolicy>
-            </releases>
-            <snapshots>
-                <enabled>false</enabled>
-                <updatePolicy>never</updatePolicy>
-            </snapshots>
-        </repository>
-            
-    </repositories>
+  
 </project>
