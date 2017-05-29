@@ -2,17 +2,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.dominikdorn.springjsf.security</groupId>
+    <groupId>org.springframework.security</groupId>
     <artifactId>facelets-taglib-jsf20-spring-3</artifactId>
     <version>0.6</version>
     <packaging>jar</packaging>
-    <name>Spring Security + JSF/Facelets Tag Library: JSF 2.0 + Spring 3</name>
+    <name>Spring Security + JSF/Facelets Tag Library: JSF 2 + Spring 3</name>
     <description>
-        This module aim's to simplify the integration of the Spring Security Framework with Java Server Faces
-        (JSF) / Facelets, as normal JSP-Taglibs don't work with the component-tree created by JSF/Facelets
+        Integration of the Spring Security Framework with Java Server Faces (JSF) / Facelets, as normal JSP-Taglibs don't work with the component-tree created by JSF/Facelets
     </description>
-    <url>http://www.dominikdorn.com/facelets/</url>
-	
+    	
     <properties>
  
         <spring-security-3-version>3.2.9.RELEASE</spring-security-3-version>
