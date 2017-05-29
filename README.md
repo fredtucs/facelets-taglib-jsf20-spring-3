@@ -8,7 +8,7 @@ Dependency in your pom.xml
 ```
 <dependency>
 	<groupId>org.springframework.security</groupId>
-	<artifactId>facelets-taglib-jsf2-spring</artifactId>
+	<artifactId>facelets-taglib-jsf20-spring-3</artifactId>
 	<version>0.6</version>
 </dependency>
 ```
